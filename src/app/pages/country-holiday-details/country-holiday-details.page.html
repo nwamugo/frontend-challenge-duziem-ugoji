@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        [text]="getBackButtonText()"
+        defaultHref="/">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="!ios">Holiday Details -- {{ country?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+        <ion-col size="12" size-sm="10" offset-sm="1">
+          <app-holiday-item
+            *ngFor="let holiday of holidays"
+            [holiday]="holiday"
+          ></app-holiday-item>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

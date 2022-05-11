@@ -1,0 +1,28 @@
+ion-card {
+  margin: 2rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  text-align: center;
+  --background: linear-gradient(0deg, #fefefe, #beddf5);
+
+  ion-item {
+    --background: transparent;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  ion-list {
+    background: #769f90;
+  }
+
+}

@@ -1,0 +1,12 @@
+<ion-item
+  *ngIf="country"
+  (click)="goToCountryHolidayDetails(country)"
+  detail
+>
+  <ion-label>
+    <h5 class="ion-text-wrap">{{ country?.code }}</h5>
+    <h3 class="ion-text-wrap">
+      {{ country?.name }}
+    </h3>
+  </ion-label>
+</ion-item>

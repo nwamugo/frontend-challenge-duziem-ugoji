@@ -1,0 +1,69 @@
+ion-content {
+  --padding-start: 1.6rem;
+  --padding-end: 1.6rem;
+
+  h6 {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--ion-color-step-grey1);
+  }
+
+  ion-item {
+    max-width: 100%;
+    margin-top: .78rem;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+  }
+  ion-input.ios,
+  ion-input.md {
+    max-width: 100%;
+    height: 4.35rem;
+    --padding-start: 1.03rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.29;
+    border-radius: .43rem;
+    border: .25rem solid var(--ion-color-light-tint);
+
+    --color: var(--ion-color-step-dark1);
+    --placeholder-color: var(--ion-color-step-grey6);
+    --padding-top: 1.2rem;
+    --padding-bottom: 1.3rem;
+  }
+  ion-label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.29;
+    color: var(--ion-color-step-dark1);
+    margin-bottom: 1rem;
+  }
+  ion-label.md {
+    font-size: 1.7rem;
+  }
+
+  ion-button.btn {
+    width: 100%;
+    height: 5.12rem;
+    --border-radius: .5rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  ion-button.btn.login {
+    margin-top: 2.95rem;
+  }
+
+  // * User Experience for input
+  ion-item.item-has-focus {
+    ion-input {
+      border-color: var(--ion-color-primary);
+    }
+    ion-label.ios {
+      color: var(--ion-color-primary);
+    }
+  }
+}
